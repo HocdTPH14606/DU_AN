@@ -55,13 +55,16 @@ if (isset($_POST["add-cart"]) && ($_POST["add-cart"])) {
                     <?php echo show(); ?>
                 </table>
             </div>
-            <?php if (sizeof($_SESSION['cart']) > 0) { ?>
+            <?php if (isset($_SESSION['cart']) && sizeof($_SESSION['cart']) > 0) { ?>
                 <div class="row text-right" style="margin-bottom: 10px;">
+                <a href="../trang-chinh/index.php"><input class="btn btn-success" type="button" value="Tiếp tục mua"></a>  
                     <a href="cart.php?delcart=1"><input class="btn btn-success " type="button" value="xóa giỏ hàng"></a>
                     <input class="btn btn-success " type="submit" name="thanh-toan-form" value="Đặt hàng">
                 </div>
             <?php } else { ?>
-                
+                <div class="row text-right" style="margin-bottom: 10px;">
+                    <a href="../trang-chinh/index.php"><input class="btn btn-success" type="button" value="Tiếp tục mua"></a> 
+                </div>
             <?php } ?>
         </form>
     </div>
