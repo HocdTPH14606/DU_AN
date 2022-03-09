@@ -105,6 +105,7 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <div class="col-sm-6 text-right">
+                                    <a href="../trang-chinh/index.php"><input class="btn btn-success" type="button" value="Tiếp tục mua"></a> 
                                     <input type="submit" class="btn btn-success" value="Đặt hàng" name="yes">
                                 </div>
                             </div>
